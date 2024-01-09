@@ -15,10 +15,7 @@ except IOError:
     target = cw.target(scope)
 
 print("INFO: Found ChipWhisperer😍")
-SCOPETYPE = 'CWNANO'
-PLATFORM = 'CWNANO'
 prog = cw.programmers.STM32FProgrammer
-
 time.sleep(0.05)
 scope.default_setup()
 
