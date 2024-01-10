@@ -23,7 +23,8 @@ def reset_target(scope):
 reset_target(scope)
 
 base_path = "C:/Users/Senthil/ChipWhisperer5_64/cw/home/portable/chipwhisperer"
-firmware_path = "/hardware/victims/firmware/simpleserial-base-lab2/simpleserial-base-{}.hex".format(PLATFORM)
+# firmware_path = "/hardware/victims/firmware/simpleserial-base-lab2/simpleserial-base-{}.hex".format(PLATFORM)
+firmware_path = "/hardware/victims/firmware/basic-passwdcheck/basic-passwdcheck-{}.hex".format(PLATFORM)
 full_path = os.path.normpath(base_path + firmware_path)
 cw.program_target(scope, prog, full_path)
 
