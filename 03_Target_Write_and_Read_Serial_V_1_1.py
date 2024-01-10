@@ -30,9 +30,6 @@ print(pt)
 target.simpleserial_write('p', pt)
 ct = target.simpleserial_read('r', 16)
 print(ct)
-target.simpleserial_write('e', pt)
-ct = target.simpleserial_read('r', 16)
-print(ct)
 
 def reset_target(scope):
     scope.io.nrst = 'low'
