@@ -18,6 +18,7 @@ print("INFO: Found ChipWhisperer😍")
 prog = cw.programmers.STM32FProgrammer
 time.sleep(0.05)
 scope.default_setup()
+scope.adc.samples = 1000
 
 
 print(target.baud)
@@ -52,7 +53,3 @@ reset_target(scope)
 
 # Debug print statement
 print("Debug: Reset target completed")
-
-
-
-
