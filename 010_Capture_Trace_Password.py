@@ -58,7 +58,7 @@ def cap_pass_trace(pass_guess):
 
 
 
-wave = cap_pass_trace("h1px3\n")
+wave = cap_pass_trace("e0px3\n")
 
 
 
